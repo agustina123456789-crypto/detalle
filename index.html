@@ -56,6 +56,7 @@
       max-width: 90%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease;
+      margin-bottom: 20px;
     }
 
     .card:hover {
@@ -81,17 +82,24 @@
       padding: 0;
     }
 
-    /* Ajustes para pantallas muy pequeñas */
+    /* Ajustes para pantallas pequeñas */
     @media (max-width: 480px) {
       .greetings span {
-        font-size: 12vw;
+        font-size: 12vw; /* Ajustar el tamaño del texto "Hola" */
+      }
+      .description span {
+        font-size: 1.2em; /* Reducir el tamaño de la descripción en pantallas pequeñas */
+        line-height: 1.2; /* Mejorar la legibilidad */
+        padding: 0 10px; /* Añadir un poco de padding para evitar que el texto se vea pegado */
       }
       .perfil-cards {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
       }
       .card {
-        width: 90%;
+        width: 80%; /* Reducir el tamaño de las tarjetas */
+        margin: 10px 0;
       }
     }
   </style>
