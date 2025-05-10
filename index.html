@@ -26,8 +26,14 @@
     }
 
     .description span {
-      font-size: 1.5em;
+      font-size: 2.5vw; /* Tamaño de fuente flexible para que se ajuste mejor */
       color: #555;
+      padding: 10px 20px;
+      line-height: 1.4;
+      display: inline-block;
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: center;
     }
 
     .botones {
@@ -88,9 +94,10 @@
         font-size: 12vw; /* Ajustar el tamaño del texto "Hola" */
       }
       .description span {
-        font-size: 1.2em; /* Reducir el tamaño de la descripción en pantallas pequeñas */
-        line-height: 1.2; /* Mejorar la legibilidad */
-        padding: 0 10px; /* Añadir un poco de padding para evitar que el texto se vea pegado */
+        font-size: 6vw; /* Tamaño dinámico para la descripción en móvil */
+        line-height: 1.4;
+        max-width: 90%; /* Aseguramos que el texto no se salga */
+        padding: 10px;
       }
       .perfil-cards {
         flex-direction: column;
