@@ -53,16 +53,15 @@ body {
   transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 600px) {
-  /* Ajuste para dispositivos con un ancho máximo de 600px */
-  .titulo {
-    font-size: 18px; /* Reducir el tamaño de la fuente */
-    margin-bottom: 25%; /* Ajustar la posición vertical */
-    letter-spacing: 5px; /* Reducir el espaciado entre letras */
-    transform: translateX(-50%) translateY(-20%); /* Centrar y ajustar verticalmente */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
-
 
 .night {
   z-index: -1;
