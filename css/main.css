@@ -51,8 +51,8 @@ body {
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 5vw; /* Ajuste del tamaño del texto basado en el tamaño de la ventana */
 }
-
 
 @keyframes fadeIn {
   from {
@@ -60,6 +60,20 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .titulo {
+    font-size: 8vw; /* Ajuste para pantallas más pequeñas */
+    margin-bottom: 120px; /* Reduce la distancia inferior en pantallas más pequeñas */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .titulo {
+    font-size: 12vw; /* Ajuste aún más grande para dispositivos muy pequeños */
+    margin-bottom: 80px; /* Distancia inferior reducida para pantallas muy pequeñas */
   }
 }
 
