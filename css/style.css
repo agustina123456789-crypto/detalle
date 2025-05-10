@@ -93,14 +93,14 @@ body {
     }
 
     .greetings {
-        font-size: 4rem;
+        font-size: 3rem; /* Reducir aún más el tamaño de la fuente en pantallas pequeñas */
         font-weight: 800;
         text-align: center;
         margin-top: 30px; /* Aumentado el margen superior para más espacio */
     }
 
     .description {
-        font-size: 2rem;
+        font-size: 1.8rem; /* También reducido un poco el tamaño de la descripción */
         text-align: center;
     }
 
