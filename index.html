@@ -18,7 +18,7 @@
     }
 
     .greetings span {
-      font-size: 8vw;
+      font-size: 8vw; /* Tamaño de fuente ajustado para el saludo */
       color: #d6336c;
       display: inline-block;
       margin: 5px;
@@ -26,7 +26,7 @@
     }
 
     .description span {
-      font-size: 2.5vw;
+      font-size: 2.5vw; /* Ajuste del tamaño para la descripción */
       color: #555;
       padding: 10px 20px;
       line-height: 1.4;
@@ -91,7 +91,7 @@
     /* Ajustes para pantallas pequeñas */
     @media (max-width: 480px) {
       .greetings {
-        margin-top: 20vh; /* Empujar el texto "Hola" hacia abajo */
+        margin-top: 15vh; /* Reducido el margen superior para asegurar que el texto no se oculte */
       }
 
       .greetings span {
@@ -99,11 +99,11 @@
       }
 
       .description {
-        margin-top: 5vh; /* Espacio adicional antes de la descripción */
+        margin-top: 5vh; /* Menos margen para que el texto no quede tan lejos */
       }
 
       .description span {
-        font-size: 5vw; /* Ajustar tamaño dinámico en dispositivos móviles */
+        font-size: 5vw; /* Ajuste para que se vea bien en móvil */
         line-height: 1.4;
         max-width: 90%;
         padding: 15px;
