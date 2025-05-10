@@ -30,17 +30,17 @@ body {
   font-weight: bold;
   letter-spacing: 4px;
 }
-
 @media only screen and (max-width: 600px) {
+  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
-      font-size: 14px;
+      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
       margin-bottom: 530px;
       letter-spacing: 3px;
   }
-}
 
+}
 .titulo {
-  top: 10%;
+  margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
   color: yellow;
   position: absolute;
@@ -49,11 +49,7 @@ body {
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 6rem;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -63,26 +59,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .titulo {
-    font-size: 5rem;
-    top: 15%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .titulo {
-    font-size: 4rem;
-    top: 25%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .titulo {
-    font-size: 3rem;
-    top: 30%;
-  }
-}
 .night {
   z-index: -1;
   position: absolute;
