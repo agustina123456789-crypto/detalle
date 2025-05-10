@@ -26,13 +26,13 @@
     }
 
     .description span {
-      font-size: 2.5vw; /* Tamaño de fuente flexible para que se ajuste mejor */
+      font-size: 2.5vw;
       color: #555;
       padding: 10px 20px;
       line-height: 1.4;
       display: inline-block;
       max-width: 90%;
-      margin: 0 auto;
+      margin: 20px auto;
       text-align: center;
     }
 
@@ -90,22 +90,33 @@
 
     /* Ajustes para pantallas pequeñas */
     @media (max-width: 480px) {
+      .greetings {
+        margin-top: 20vh; /* Empujar el texto "Hola" hacia abajo */
+      }
+
       .greetings span {
-        font-size: 12vw; /* Ajustar el tamaño del texto "Hola" */
+        font-size: 12vw; /* Ajuste para pantallas más pequeñas */
       }
+
+      .description {
+        margin-top: 5vh; /* Espacio adicional antes de la descripción */
+      }
+
       .description span {
-        font-size: 6vw; /* Tamaño dinámico para la descripción en móvil */
+        font-size: 5vw; /* Ajustar tamaño dinámico en dispositivos móviles */
         line-height: 1.4;
-        max-width: 90%; /* Aseguramos que el texto no se salga */
-        padding: 10px;
+        max-width: 90%;
+        padding: 15px;
       }
+
       .perfil-cards {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
       }
+
       .card {
-        width: 80%; /* Reducir el tamaño de las tarjetas */
+        width: 80%;
         margin: 10px 0;
       }
     }
