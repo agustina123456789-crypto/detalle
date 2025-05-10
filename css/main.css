@@ -30,15 +30,15 @@ body {
   font-weight: bold;
   letter-spacing: 4px;
 }
+
 @media only screen and (max-width: 600px) {
-  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
-      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
+      font-size: 14px;
       margin-bottom: 530px;
       letter-spacing: 3px;
   }
-
 }
+
 .titulo {
   margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
@@ -51,7 +51,7 @@ body {
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 5vw; /* Ajuste del tamaño del texto basado en el tamaño de la ventana */
+  font-size: 6rem; /* Tamaño base más controlado */
 }
 
 @keyframes fadeIn {
@@ -63,19 +63,27 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .titulo {
+    font-size: 5rem; /* Ajuste para pantallas medianas */
+    margin-bottom: 200px; /* Mayor distancia inferior para pantallas medianas */
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .titulo {
-    font-size: 8vw; /* Ajuste para pantallas más pequeñas */
-    margin-bottom: 120px; /* Reduce la distancia inferior en pantallas más pequeñas */
+    font-size: 4rem; /* Ajuste para pantallas más pequeñas */
+    margin-bottom: 300px; /* Aumenta la distancia inferior para pantallas más pequeñas */
   }
 }
 
 @media only screen and (max-width: 480px) {
   .titulo {
-    font-size: 12vw; /* Ajuste aún más grande para dispositivos muy pequeños */
-    margin-bottom: 80px; /* Distancia inferior reducida para pantallas muy pequeñas */
+    font-size: 3rem; /* Ajuste para pantallas muy pequeñas */
+    margin-bottom: 400px; /* Aumenta aún más la distancia inferior para pantallas muy pequeñas */
   }
 }
+
 
 .night {
   z-index: -1;
