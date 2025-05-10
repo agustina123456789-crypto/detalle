@@ -40,7 +40,7 @@ body {
 }
 
 .titulo {
-  top: 10%; /* Nueva forma de posicionar verticalmente */
+  position:relative; /* Nueva forma de posicionar verticalmente */
   font-family: "Arial Narrow", Arial, sans-serif;
   color: yellow;
   position: absolute;
